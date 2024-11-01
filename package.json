@@ -25,5 +25,11 @@
     "eslint-plugin-import": "2.29.1",
     "stylelint": "16.8.2",
     "stylelint-config-standard": "36.0.1"
+  },
+  "dependencies": {
+    "@adobe/helix-cli": "^14.24.10",
+    "@esm-bundle/chai": "^4.3.4-fix.0",
+    "@web/test-runner": "^0.14.0",
+    "@web/test-runner-commands": "^0.6.4"
   }
 }
