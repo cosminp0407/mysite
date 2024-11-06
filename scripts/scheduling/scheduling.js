@@ -38,7 +38,15 @@ const current = window.sessionStorage.getItem('preview-date') || today;
 previewWithDateButton.replaceWith(
   document
     .createRange()
-    .createContextualFragment(`<input class="date-selection" type="date" id="date" name="preview-start" value=${current} required pattern="\\d{4}-\\d{2}-\\d{2}" />`),
+    .createContextualFragment(`<input
+  class="date-time-selection"
+  type="datetime-local"
+  id="date-time"
+  name="preview-start"
+  value="${current}"
+  required
+  pattern="\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}"
+/>`),
 );
 
 sidekick.shadowRoot.querySelector('.date-selection').addEventListener('change', (event) => {
